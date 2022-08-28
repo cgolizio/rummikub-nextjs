@@ -31,7 +31,9 @@ export default function Home() {
         }}
       >
         <div className={styles.main}>
-          <h1>RUMMIKUB!</h1>
+          <div className={styles.header}>
+            <h1>RUMMIKUB!</h1>
+          </div>
           <button
             onClick={() => dispatch({ type: "ADD_PLAYER" })}
             disabled={state.players.length >= 4}

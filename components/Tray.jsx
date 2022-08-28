@@ -16,7 +16,6 @@ const PlayerTray = styled.ol`
 
 const Tray = () => {
   const { state } = useContext(MainContext);
-  // const { current_player_index, players } = state;
 
   return (
     <PlayerTray>
