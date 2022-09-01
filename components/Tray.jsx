@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-import { MainContext } from '../pages';
+import { useGameState } from './Game';
 import Tile from './Tile';
 
 const PlayerTray = styled.ol`
@@ -15,7 +15,7 @@ const PlayerTray = styled.ol`
 `;
 
 const Tray = () => {
-  const { state } = useContext(MainContext);
+  const state = useGameState();
 
   return (
     <PlayerTray>
